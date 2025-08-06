@@ -1,0 +1,100 @@
+Friboi Picanha Resfriada ; 55,00
+Friboi Coração Bovino ; 28,00
+Friboi Maturatta Contra-filé ; 45,00
+Friboi Reserva Prime Ancho ; 65,00
+Seara Hambúrguer Bovino 56g (unidade) ; 8,50
+Seara Linguiça Toscana 500g ; 12,00
+Seara Bacon Fatiado 200g ; 9,00
+Seara Lasanha Frango 400g ; 14,00
+Seara Nuggets Frango 300g ; 11,00
+Seara Filé de Peito de Frango 1kg ; 22,00
+Seara Frango da Granja 1kg ; 18,00
+Anglo Vegetais em Conserva 350g ; 6,50
+Anglo Feijoada Pronta 430g ; 7,00
+Anglo Vegetais Mix 300g ; 5,50
+Bordon Fiambre de Frango 320g ; 9,50
+Bordon Carne Mista Conserva 320g ; 8,50
+Delícia Margarina 500g ; 5,50
+Primor Margarina 500g ; 5,20
+Gradina Maionese 500g ; 6,00
+Delicata Creme de Leite 200g ; 4,00
+Franciscano Leite UHT 1L ; 3,80
+Mesa Iogurte Natural 170g ; 2,50
+Ricca Requeijão Tradicional 200g ; 7,00
+Aspen Ridge Cream Cheese 150g ; 8,50
+Rezende Salame Italiano 300g ; 15,00
+Rezende Mortadela Bologna 300g ; 12,50
+Rigamonti Queijo Parma 50g ; 14,00
+Cremosy Creme de Ricota 150g ; 4,50
+Cukin Coalhada Seca 300g ; 6,00
+Salada Iogurte com Frutas 170g ; 3,00
+Swift Black Filé Maturado 500g ; 50,00
+Swift Black Prime Rib 600g ; 65,00
+Swift Black Cupim Premium 500g ; 55,00
+Swift Hambúrguer Angus 200g ; 18,00
+Swift Almôndega 400g ; 16,00
+Just Bare Organic Chicken Breasts 1kg ; 28,00
+Just Bare Organic Chicken Thighs 1kg ; 26,00
+Gold’n Plump Antibiótico-Free Filé 1kg ; 24,00
+Gold’n Plump Wings 1kg ; 20,00
+Moy Park Breaded Chicken 400g ; 14,00
+Moy Park Chicken Strips 300g ; 13,00
+Pilgrim’s Pride Smoked Ham 500g ; 20,00
+Primo Smallgoods Presunto Fatiado 200g ; 18,00
+Primo Smallgoods Bacon Defumado 200g ; 17,00
+Organic Beef Friboi Contra-filé Orgânico 500g ; 60,00
+Maturatta Friboi Picanha Angus 1kg ; 120,00
+Reserva Friboi Alcatra Premium 1kg ; 110,00
+Do Chef! Friboi Strogonoff Pronto 400g ; 17,00
+Excelsior Carne Moída 1kg ; 45,00
+Apeti Frango Empanado 500g ; 16,00
+Bertin Costela Suína 1kg ; 28,00
+Atkins Hambúrguer Veg 200g ; 15,00
+Incrível! Seara Burger Plant-Based 200g ; 14,00
+Vivera Plant-Based Schnitzel 200g ; 16,00
+Vivera Plant-Based Sausage 300g ; 18,00
+NovaProm Colágeno Hidrolisado 300g ; 40,00
+Genu-in Peptídeos de Colágeno 200g ; 35,00
+Orygina Meio de Cultura para Vacina 1L ; 150,00
+Orygina Insumo Molecular 500mL ; 120,00
+JBS Higiene Sabão em Barra Minuano 1kg ; 8,00
+JBS Higiene Detergente Minuano 1L ; 7,00
+BioBriz Sabonete Líquido 500mL ; 12,00
+Lavarte Sabonete Antibacteriano 200mL ; 10,00
+Flora Shampoo Neutrox 300mL ; 12,00
+Flora Condicionador Neutrox 300mL ; 13,00
+Funpet Ração Pet 1kg ; 15,00
+Campo Forte Fertilizante Orgânico 50kg ; 120,00
+JBS Couros Couro Wet-blue por m² ; 85,00
+Zempack Lata de Aço 350mL (cx 12) ; 30,00
+Zempack Aerosol Alumínio 300mL (cx 12) ; 45,00
+NoCarbon Locação Caminhão Elétrico (diária) ; 800,00
+TRP Caminhão Seminovo (modelo básico) ; 250000,00
+JBS Trading Óleo Vegetal 1L ; 6,00
+JBS Trading Matéria-prima Celulose 1ton ; 500,00
+Great Southern Chicken Fillets 1kg ; 23,00
+Andrews Meat Beef Jerky 100g ; 25,00
+1855 Friboi Bife de Chorizo 300g ; 70,00
+1953 Friboi Ribeye 400g ; 80,00
+Frigor Hans Linguiça Artesanal 400g ; 14,00
+Do Chef! Friboi Risoto de Frango 300g ; 15,00
+Denny Bacon Americana 200g ; 10,00
+Big Frango Coxa e Sobrecoxa 1kg ; 20,00
+Kitut Seara Pizza Congelada 400g ; 13,00
+Cabaña las Lilas Steak Dry-Aged 300g ; 90,00
+Hereford Friboi Picanha Hereford 1kg ; 125,00
+Incrível! Seara Nuggets Veg 300g ; 12,00
+Reserva Friboi T-Bone 1kg ; 130,00
+Friboi Angus Bife de Chorizo 300g ; 85,00
+Friboi Angus Bife Ancho 300g ; 90,00
+Smart-brand Sola Peito de Peru 200g ; 8,00
+Sola Presunto de Peru 200g ; 9,00
+Marba Mortadela Tradicional 300g ; 11,00
+Rezende Pizza Frango com Catupiry 400g ; 14,00
+Rezende Pizza Portuguesa 400g ; 14,00
+Rezende Empanados Frango 300g ; 13,00
+Rezende Strogonoff Carne 400g ; 16,00
+LeBon Mortadela Especial 300g ; 13,00
+LeBon Salaminho Fatiado 100g ; 9,00
+Apeti Frango Empanado Kids 300g ; 12,00
+Apeti Polpetone de Frango 400g ; 15,00

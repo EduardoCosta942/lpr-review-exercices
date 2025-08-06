@@ -1,3 +1,6 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Exercises {
@@ -29,5 +32,47 @@ public class Exercises {
 
         // Return average:
         return (double) average / amountOfNumbers;
+    }
+
+    public static String[][] mkproducts(File file) throws FileNotFoundException {
+        // Create variables:
+        Scanner scanner = new Scanner(file);
+        String[] lines;
+        String[] productsName;
+        String[] prices;
+        String[][] returnable;
+
+        // Count amount of lines:
+        int count = 0;
+        while (scanner.hasNextLine()) {
+            scanner.nextLine();
+            count++;
+        }
+        scanner.close();
+
+        // Store lines at variable lines
+        lines = new String[count];
+        scanner = new Scanner(file); // Re-open Scanner
+        for (int x = 0; x < count; x++) {
+            lines[x] = scanner.nextLine();
+        }
+        scanner.close();
+
+
+        // Get the product name and their prices
+        productsName = new String[count];
+        prices = new String[count];
+        for (int x = 0; x < lines.length; x++) {
+            String[] line = lines[x].split(";");
+            productsName[x] = line[0];
+            prices[x] = line[1];
+        }
+
+        // Return
+        returnable = new String[2][count];
+        returnable[0] = productsName;
+        returnable[1] = prices;
+
+        return returnable;
     }
 }
