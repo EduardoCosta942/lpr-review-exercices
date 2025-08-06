@@ -1,5 +1,7 @@
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -74,5 +76,16 @@ public class Exercises {
         returnable[1] = prices;
 
         return returnable;
+    }
+
+    public static void rmSalaries(Scanner scanner, double adjustment, FileWriter fileWriter) throws IOException {
+        // Declare variables:
+        int vectorSize;
+
+        // Read file and record adjusted salaries
+        while (scanner.hasNextLine()){
+            fileWriter.write(String.valueOf(scanner.nextDouble() * (1 + adjustment/100.00)));
+        }
+        fileWriter.close();
     }
 }
