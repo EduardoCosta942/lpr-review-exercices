@@ -1,3 +1,5 @@
+import Utils.Person;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
@@ -85,6 +87,61 @@ public class Exercises {
         // Read file and record adjusted salaries
         while (scanner.hasNextLine()){
             fileWriter.write(String.valueOf(scanner.nextDouble() * (1 + adjustment/100.00)));
+        }
+        fileWriter.close();
+    }
+
+    public static void signPeople(File fileOfNames, File fileOfCPFs, File fileOfAges,FileWriter fileWriter) throws IOException {
+        // Declare variables:
+        Scanner readNames = new Scanner(fileOfNames);
+        Scanner readCPFs = new Scanner(fileOfCPFs);
+        Scanner readAges = new Scanner(fileOfAges);
+        String[] names;
+        String[] cpf;
+        String[] ages;
+        Person[] people = new Person[10];
+        int lines;
+
+        // Validate files
+        lines = 0;
+        names = new String[10];
+
+        while (readNames.hasNextLine()){
+            if (lines == 10) throw new IllegalArgumentException("Parameter fileOfNames must have 10 Lines. Have more.");
+            names[lines] = readNames.nextLine();
+            lines++;
+        }
+        readNames.close();
+        if (lines!=10) throw new IllegalArgumentException("Parameter fileOfNames must have 10 Lines. Have less.");
+
+        lines = 0;
+        cpf = new String[10];
+        while (readCPFs.hasNextLine()){
+            if (lines==10) throw new IllegalArgumentException("Parameter fileOfCPFs must have 10 Lines. Have more.");
+            cpf[lines] = readCPFs.nextLine();
+            lines++;
+        }
+        readCPFs.close();
+        if (lines!=10) throw new IllegalArgumentException("Parameter fileOfCPFs must have 10 Lines. Have less.");
+
+        lines = 0;
+        ages = new String[10];
+        while (readAges.hasNextLine()){
+            if (lines==10) throw new IllegalArgumentException("Parameter fileOfAges must have 10 Lines. Have more.");
+            ages[lines] = readAges.nextLine();
+            lines++;
+        }
+        readAges.close();
+        if (lines!=10) throw new IllegalArgumentException("Parameter fileOfAges must have 10 Lines. Have less.");
+
+        // Instantiate Person and store in a vector
+        for (int l = 0; l < 10; l++){
+            people[l] = new Person(names[l], cpf[l], Integer.parseInt(ages[l]));
+        }
+
+        // Write instances of People by FileWriter
+        for (int l = 0; l < 10; l++){
+            fileWriter.write(people[l].toString() + "\n");
         }
         fileWriter.close();
     }

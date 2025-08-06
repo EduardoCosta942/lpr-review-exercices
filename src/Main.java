@@ -30,7 +30,7 @@ public class Main {
             System.out.println("An error occured: + fnfe");
         }*/
 
-        // Ex3:
+/*        // Ex3:
         try{
             file = new File("src/Utils/salaries.txt");
             scanner = new Scanner(file);
@@ -38,7 +38,17 @@ public class Main {
             Exercises.rmSalaries(scanner, 100, fileWriter);
         } catch (IOException ioe){
             System.out.println("An error occurred: " + ioe);
-        }
+        }*/
 
+        // Ex4:
+        try{
+            fileWriter = new FileWriter("src/Utils/pessoas.txt");
+            Exercises.signPeople(new File("src/Utils/names.txt"),
+                    new File("src/Utils/cpfs.txt"),
+                    new File("src/Utils/ages.txt"),
+                    fileWriter);
+        } catch (IOException  ioe){
+            System.out.println("An error occurred: " + ioe);
+        }
     }
 }
