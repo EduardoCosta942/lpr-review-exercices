@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.file.Path;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -144,5 +145,96 @@ public class Exercises {
             fileWriter.write(people[l].toString() + "\n");
         }
         fileWriter.close();
+    }
+
+    public static void orderByAsc(File file) throws IOException{
+        // Declare variables
+        Scanner scanner;
+        int size;
+        String[][] people;
+        String[] names;
+        String[] cpfs;
+        String[] ages;
+        String[] order;
+
+        // Calculate size
+        size = 0;
+        scanner = new Scanner(file);
+        while(scanner.hasNext()){
+            if (scanner.nextLine().contains("cpf=")){
+                size++;
+            }
+        }
+        scanner.close();
+
+        // Implement variables that need size
+        people = new String[size][3];
+        names = new String[size];
+        cpfs = new String[size];
+        ages = new String[size];
+
+        // Read file and store at variables: names, cpfs, ages
+        scanner = new Scanner(file);
+        for (int x = 0; x < size; x++) {
+            if (scanner.nextLine().equals('{')) {
+                for (int l = 0; l < 3; l++){
+                    String line = scanner.nextLine();
+                    if (line.contains("name=")){
+                        names[x] = line.substring(5);
+                    } else if (line.contains("cpf=")) {
+                        cpfs[x] = line.substring(4);
+                    } else if (line.contains("age=")){
+                        ages[x] = line.substring(4);
+                    }
+                }
+            }
+        }
+
+        // Fill var people by vars names, cpfs and ages
+        for (int x = 0; x < size; x++) {
+            for (int y = 0; y < 3; y++){
+                if (y == 0){
+                    people[x][y] = names[x];
+                } else if(y == 1) {
+                    people[x][y] = cpfs[x];
+                } else {
+                    people[x][y] = ages[x];
+                }
+            }
+        }
+
+        // Order by asc, grouping by name
+        order = new String[size];
+        int x = 0;
+        int o = 0;
+        boolean isTrue;
+        while(x < size){
+            isTrue = true;
+                for (int y = 0; y < size; y++) {
+                    if (!(order.contains(names[y]))){
+                        if (!(names[x].compareTo(names[y]) < 0)) {
+                            isTrue = false;
+                        }
+                    }
+                }
+                if (isTrue) {
+                    order[o] = names[x];
+                    o++;
+                }
+            x++;
+        }
+
+        // Write at file by order
+        Person person;
+        FileWriter writer = new FileWriter(file);
+        for (o = 0; o < size; o++){
+            for (x = 0; x < size; x++) {
+                if (people[x][0].equals(order[o])){
+                   person = new Person(names[x], cpfs[x], Integer.parseInt(ages[x]));
+                   writer.write(person.toString());
+                }
+            }
+        }
+        writer.close();
     }
 }
