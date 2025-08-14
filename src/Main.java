@@ -41,7 +41,7 @@ public class Main {
         }*/
 
         // Ex4:
-        try{
+/*        try{
             fileWriter = new FileWriter("src/Utils/pessoas.txt");
             Exercises.signPeople(new File("src/Utils/names.txt"),
                     new File("src/Utils/cpfs.txt"),
@@ -49,6 +49,15 @@ public class Main {
                     fileWriter);
         } catch (IOException  ioe){
             System.out.println("An error occurred: " + ioe);
+        }*/
+
+        // Ex5:
+        try{
+            file = new File("src/Utils/pessoas.txt");
+            Exercises.orderByAsc(file, new File("src/Utils/orderedPeople.txt"));
+        } catch (IOException ioe){
+            System.out.println(ioe);
         }
+
     }
 }
